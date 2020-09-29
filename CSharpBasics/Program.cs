@@ -1,4 +1,5 @@
 ﻿using System;
+using AccessModifierAndMethods;
 
 // namespace CSharpBasics
 // {
@@ -20,7 +21,7 @@
 //     {
 //         SelectionStatement selectionStatement = new SelectionStatement();
 //         selectionStatement.LearnSwitchCases();
-        
+
 //     }
 // }
 
@@ -30,5 +31,8 @@ class Program
     {
         IterationStatement iterationStatement = new IterationStatement();
         iterationStatement.LearnForLoops();
+
+        AccessModifier accessModifier = new AccessModifier();
+        accessModifier.DoSomething();
     }
 }
