@@ -34,5 +34,11 @@ class Program
 
         AccessModifier accessModifier = new AccessModifier();
         accessModifier.DoSomething();
+
+        Person person = new Person();
+        person.Name = "Badal";
+        person.Age = 121;
+
+        var x = person.Age;
     }
 }
