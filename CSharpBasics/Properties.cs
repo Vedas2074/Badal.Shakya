@@ -1,4 +1,4 @@
-class Person
+class Human
 {
     // internal string name;
     byte age = 23;
