@@ -43,6 +43,7 @@
 //     }
 // }
 
+using System;
 using LearningClasses;
 
 class Program
@@ -54,5 +55,12 @@ class Program
         var person3 = new Person("Ram", "Bhaktapur", 45);
 
         var person4 = new Person();
+        var x = Person.ScientificName;
+
+        var y = Math.Sqrt(343);
+
+        var s = Calculator.Sum(23, 34);
+        var s1 = Calculator.Sum<int>(23, 34);
+        var s2 = Calculator.Sum<decimal>(23123.12m, 34345132.1m);
     }
 }
