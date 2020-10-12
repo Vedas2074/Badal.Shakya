@@ -3,7 +3,7 @@ using System;
 class IterationStatement
 {
 
-    static void Main()
+    static void Main12345()
     {
         IterationStatement iterationStatement = new IterationStatement();
         iterationStatement.LearnWhileLoops();
