@@ -83,6 +83,7 @@ class Program
         Rectangle r2 = new Rectangle(278.6, 61.32);
         r1.PrintDetails();
         r2.PrintDetails();
+        r2.GetDiagonalLength();
 
         // var r1Area = r1.GetArea();
 
