@@ -45,6 +45,7 @@
 
 using System;
 using LearningClasses;
+using FileDirectoryHandling;
 
 class Program
 {
@@ -79,23 +80,29 @@ class Program
         // var perimeter = rectangle.GetPerimeter();
 
         //using constructor
-        Shape r1 = new Rectangle(23.6, 6.32);
-        Rectangle r2 = new Rectangle(278.6, 61.32);
-        r1.PrintDetails();
-        r2.PrintDetails();
-        r2.GetDiagonalLength();
+        // Shape r1 = new Rectangle(23.6, 6.32);
+        // Rectangle r2 = new Rectangle(278.6, 61.32);
+        // r1.PrintDetails();
+        // r2.PrintDetails();
+        // r2.GetDiagonalLength();
 
         // var r1Area = r1.GetArea();
 
         //Assignable to Grand-Parent class
-        Shape s4 = new Square(45.3);
-        s4.PrintDetails();
+        // Shape s4 = new Square(45.3);
+        // s4.PrintDetails();
 
         // Square sq = new Square(34.5);
         // var sqPerimeter = sq.GetPerimeter();
 
-        Shape c = new Circle(23.5);
+        // Shape c = new Circle(23.5);
         // var cArea = c.GetArea();
-        c.PrintDetails();
+        // c.PrintDetails();
+
+        // FileIO file = new FileIO();
+        // file.LearnFileWriting();
+
+        FileIO file = new FileIO();
+        file.LearnDirectoryInfo();
     }
 }
