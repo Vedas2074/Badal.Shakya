@@ -28,5 +28,12 @@ namespace EmployeeManagement.Controllers
             // List<Employee> employees = new List<Employee>();
             return View();
         }
+
+        [HttpPost]
+
+        public string Add(Employee employee)
+        {
+            return "Record Saved";
+        }
     }
 }

@@ -1,11 +1,13 @@
+using System.ComponentModel.DataAnnotations;
 namespace EmployeeManagement.Models
 {
-    public class Worker
+    public class Department
     {
-        public int DepartmentId { get; set; }
-        public string Department { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string EmployeeId { get; set; }
+        public int Id {get; set;}
+
+        [Required(ErrorMessage="We need your department name")]
+        public string DepartmentName {get;  set;}
+        public int NumberOfEmployee {get; set;}
+        public float Salary { get; set;}
     }
 }

@@ -1,36 +1,42 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using EmployeeManagement.Models;
-
 namespace EmployeeManagement.Controllers
 {
-
     public class DepartmentController : Controller
     {
-        public IActionResult Index()
+         public IActionResult Index()
         {
-            // List<Employee> employees = new List<Employee>();
-
-            Worker worker1 = new Worker()
+            Department department1 = new Department()
             {
-                DepartmentId = 1, 
-                Department = "Accounts",
-                FirstName = "Badal", 
-                LastName = "Shakya",
-                EmployeeId = "E01" 
+                Id = 1,
+                DepartmentName = "Sales",
+                NumberOfEmployee = 8,
+                Salary = 200000
             };
-            
-            Worker worker2 = new Worker() 
-            { 
-                DepartmentId = 2, 
-                Department = "Sales",
-                FirstName = "Ram", 
-                LastName = "Khatri",
-                EmployeeId = "E11"
+            Department department2 = new Department()
+            {
+                Id = 2,
+                DepartmentName = "Marketing",
+                NumberOfEmployee = 3,
+                Salary = 500000
             };
+            List<Department> departments =  new List<Department>() {department1, department2};
 
-            List<Worker> workers = new List<Worker>() { worker1, worker2 };
-            return View(workers);
+            return View(departments);
         }
+        public ActionResult Add()
+        {
+            
+            return View();
+
+        }
+        [HttpPost]
+         public string Add(Department department)
+        {
+            
+            return "Record Saved";
+
+        }  
     }
 }

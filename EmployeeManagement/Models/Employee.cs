@@ -1,10 +1,13 @@
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 namespace EmployeeManagement.Models
 {
     public class Employee
     {
         public int Id { get; set; }
+        [Required(ErrorMessage="We need your first name")]
         public string FirstName { get; set; }
+        [Required(ErrorMessage="We need your last name")]
         public string LastName { get; set; }
         public string Address { get; set; }
         public float Salary { get; set; }

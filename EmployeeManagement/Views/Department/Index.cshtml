@@ -1,26 +1,25 @@
-@model List<Worker>
-<h2>List of Employees</h2>
-
+@model List<Department>
+  
+<h2>Departments</h2>
 
 <table class="table">
   <thead class="thead-dark">
     <tr>
-      <th scope="col">DepartmentId</th>
-      <th scope="col">Department</th>
-      <th scope="col">FirstName</th>
-      <th scope="col">LastName</th>
-      <th scope="col">EmployeeId</th>
+      <th scope="col">Id</th>
+      <th scope="col">DepartmentName</th>
+      <th scope="col">NumberOfEmployee</th>
+      <th scope="col">Salary</th>
     </tr>
   </thead>
   <tbody>
-    @foreach (var worker in Model)
-    {
+    @foreach (var department in Model)
+    {    
     <tr>
-        <th scope="row">@worker.DepartmentId</th>
-        <th>@worker.Department</th>
-        <td>@worker.FirstName</td>
-        <td>@worker.LastName</td>
-        <td>@worker.EmployeeId</td>
+        <th scope="row">@department.Id</th>
+        <td>
+          <a href="/department/detail">@department.DepartmentName</a>
+        <td>@department.NumberOfEmployee</td>
+        <td>@department.Salary</td>
     </tr>
     }
   </tbody>
