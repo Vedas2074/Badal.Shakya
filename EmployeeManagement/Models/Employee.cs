@@ -13,30 +13,30 @@ namespace EmployeeManagement.Models
         public string Address { get; set; }
         public float Salary { get; set; }
 
-        public static List<Employee> GetEmployees()
-        {
-        Employee employee1 = new Employee()
-            {
-                Id = 1, 
-                FirstName = "Badal", 
-                LastName = "Shakya", 
-                Address = "Lalitpur", 
-                Salary = 20000
-            };
+        // public static List<Employee> GetEmployees()
+        // {
+        // Employee employee1 = new Employee()
+        //     {
+        //         Id = 1, 
+        //         FirstName = "Badal", 
+        //         LastName = "Shakya", 
+        //         Address = "Lalitpur", 
+        //         Salary = 20000
+        //     };
             
-            Employee employee2 = new Employee() 
-            { 
-                Id = 2, 
-                FirstName = "Hari", 
-                LastName = "Khatri", 
-                Address = "Ktm", 
-                Salary = 23000
-            };
+        //     Employee employee2 = new Employee() 
+        //     { 
+        //         Id = 2, 
+        //         FirstName = "Hari", 
+        //         LastName = "Khatri", 
+        //         Address = "Ktm", 
+        //         Salary = 23000
+        //     };
 
-            List<Employee> employees = new List<Employee>() { employee1, employee2 };
+        //     List<Employee> employees = new List<Employee>() { employee1, employee2 };
 
-            return employees;
-        }
+        //     return employees;
+        // }
 
     }
 }
