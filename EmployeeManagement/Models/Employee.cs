@@ -4,6 +4,7 @@ namespace EmployeeManagement.Models
 {
     public class Employee
     {
+        // [Key]
         public int Id { get; set; }
         [Required(ErrorMessage="We need your first name")]
         public string FirstName { get; set; }
