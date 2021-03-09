@@ -77,6 +77,7 @@ namespace EmployeeManagement.Controllers
             db.Employees.Remove(employee);
             db.SaveChanges();
             
+        
             return RedirectToAction("Index");
         }
         

@@ -22,6 +22,7 @@ namespace EmployeeManagement
         {
             services.AddDbContext<EMContext>(options => options.UseSqlite("Data Source=EM.db"));
             services.AddControllersWithViews();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +40,8 @@ namespace EmployeeManagement
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseSession();
 
             app.UseRouting();
 
